@@ -6,20 +6,20 @@ function asignarButacas() {
 }
 
 function ocuparButacas(v: boolean[]) {
-  let butacasDisponible: number = 0;
+  let butacasDisponibles: number = 0;
   let butacasOcupadas: number = 0;
   for (let i: number = 0; i < v.length; i++) {
     v[i] = asignarButacas();
     if (v[i] === false) {
-      butacasDisponible += 1;
+      butacasDisponibles += 1;
     } else {
       butacasOcupadas += 1;
     }
   }
-  console.log(`Las butacas libres son ${butacasDisponible}`);
+  console.log(`Las butacas libres son ${butacasDisponibles}`);
   console.log(`Las butacas ocupadas son ${butacasOcupadas}`);
 }
 console.log(`La cantidad de butacas del cine son ${nroButacas}`);
 ocuparButacas(ocupacion);
 console.log(ocupacion); // se agrega para ver la asignacion de asientos;
-
+//esta muy bien el ejercicio
