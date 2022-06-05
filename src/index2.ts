@@ -8,7 +8,7 @@ function asignarButacas() {
   return Math.round(Math.random()) < 0.5;
 }
 
-function ocuparButacas(v: boolean[] | number[]) {
+function ocuparButacas(v: boolean[]) {
   let butacasOcupadas: number = 0;
   let butacasDisponible: number = 0;
   for (let i: number = 0; i < v.length; i++) {
